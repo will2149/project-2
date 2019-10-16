@@ -84,8 +84,10 @@ def game(total=None):
 
     if total1 > total2:
         print('player1 you win')
-    else:
+    if total1 < total2:
         print('player2 you win')
+    if total1 == total2:
+        print('it is a draw between player1 and player2')
 
 
 if __name__ == '__main__':
