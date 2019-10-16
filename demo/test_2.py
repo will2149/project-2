@@ -1,28 +1,26 @@
-import random
+def calculation() -> object:
+    input1 = input('please input a number')
+    input2 = input('please inout another number')
+
+    input3 = input('please specify add or multiplication or minus')
+
+    if input3 == "multiplication":
+        total = float(input1) * float(input2)
+
+    else:
+        total = float(input1) + float(input2)
+
+    elif
+    total = float(input1) - float(input2)
 
 
-def adding():
-    pass
-
-    def add(self):
-        input1 = input('please type roll to roll the dice')
-
-        if input1 == "roll":
-            input2 = input(random.randint(0, 6))
-
-        input3 = input('please type roll to begin your second role')
-
-        if input3 == "roll":
-            input4 = input(random.randint(0, 6))
-
-        total = input2 + input4
-
-        print("your total is", total)
+    print(total)
+    print('that is your total')
 
 
-def adding() -> object:
+class calculator:
     pass
 
 
 if __name__ == '__main__':
-    adding()
+    calculation().main()

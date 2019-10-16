@@ -5,7 +5,7 @@ class dice:
     pass
 
 
-def main(input3=None):
+def main():
     global input2, input4
     print("Hello this is a dice game between two players player 1 and player 2 you will need to log in first tho")
 
@@ -14,15 +14,13 @@ def main(input3=None):
     if input1 == "player1":
         input2 = input("please type your password")
     else:
-        if input1 == "player1":
-            input2 = input("please type your password")
+        var = input1 == "player1"
 
     if input2 == "password1":
         print("welcome to the game")
 
     else:
-        if input2 == "password1":
-            print("welcome to the game")
+        var = input2 == "password1"
 
     input3 = input("please type your username player2")
 
@@ -30,20 +28,19 @@ def main(input3=None):
         input4 = input("please type your password player2")
 
     else:
-        if input3 == "player2":
-            input4 = input("please type your password player2")
+        var = input3 == "player2"
 
     if input4 == "password2":
         print("welcome to the game")
 
     else:
-        if input4 == "password2":
-            print("welcome to the")
+        var = input4 == "password2"
 
     game()
 
 
 def game(total=None):
+    global input5
     input6: int = 0
     input7: int = 0
     print("this is now the actual game the rules are simple you get two dice roles each and there are 1round of the "
@@ -70,7 +67,7 @@ def game(total=None):
     total1: int = int(input6) + int(input7)
     print("your total is", total1)
 
-    input8 = input('player 2 it is you go now')
+    input8 = input('player 2 it is you go now please type roll to begin your first dice roll')
 
     if input8 == "roll":
         input5 = (random.randint(0, 6))
@@ -87,7 +84,6 @@ def game(total=None):
 
     if total1 > total2:
         print('player1 you win')
-
     else:
         print('player2 you win')
 
