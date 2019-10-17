@@ -6,7 +6,7 @@ class dice:
 
 
 def main():
-    global input2, input4
+    global input2, input4, input3
     print("Hello this is a dice game between two players player 1 and player 2 you will need to log in first tho")
 
     input1 = input("please log in player one type your username")
@@ -14,27 +14,31 @@ def main():
     if input1 == "player1":
         input2 = input("please type your password")
     else:
-        var = input1 == "player1"
+        input1 = input('please type your username player 1')
+        if input1 == "player1":
+            print('please type your password player 1')
 
     if input2 == "password1":
         print("welcome to the game")
 
     else:
-        var = input2 == "password1"
-
-    input3 = input("please type your username player2")
-
+        input2 = input('please type your password player1')
+        if input2 == "password1":
+            input3 = input('please type your username to begin')
     if input3 == "player2":
         input4 = input("please type your password player2")
 
     else:
-        var = input3 == "player2"
-
+        input3 = input('please type your username to begin')
+        if input3 == "player2":
+            input4 = input('please type your password player 2')
     if input4 == "password2":
         print("welcome to the game")
 
     else:
-        var = input4 == "password2"
+        input4 = input('please type your password player 2')
+        if input4 == "password2":
+            print('welcome to the game')
 
     game()
 
